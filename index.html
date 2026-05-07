@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Support Santosh's creative journey. Your contribution helps fuel amazing projects, grow a community, and ensure sustainable progress.">
-  <link rel="icon" href="src/image/my-logo.png" type="image/png">
-  <link rel="apple-touch-icon" href="src/image/my-logo.png">
-  <title>Santosh's Community Hub</title>
+  <meta name="description"
+    content="Apielex Technologies is a visionary software company building next-generation mobile applications, AI-driven platforms, and highly scalable digital solutions.">
+  <link rel="icon" href="src/image/apielex-logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="src/image/apielex-logo.png">
+  <title>Apielex Technologies</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="src/styles/style.css">
   <meta name="theme-color" content="#6c5ce7">
+  <style>
+    .hero h1::after {
+      width: 190px !important;
+      height: 5px !important;
+    }
+  </style>
 </head>
-<body class="no-scroll">
+
+<body class="no-scroll" id="home">
   <!-- Particle Background -->
   <div id="preloader">
     <div class="loader-spinner"></div>
@@ -36,9 +47,12 @@
       <nav class="navbar">
         <a href="#home" class="logo">
           <div class="logo-container">
-            <img src="src/image/profile-picture.jpg" alt="Mr. Santosh logo" class="logo-img">
+            <img src="src/image/apielex-logo.png" alt="Mr. Santosh logo" class="logo-img">
           </div>
-          <span class="logo-text">Mr. Santosh</span>
+          <span class="logo-text"
+            style="font-family: 'Poppins', sans-serif; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; font-size: 1.3em;"><span
+              style="color: var(--text);">APIE</span><span
+              style="background: linear-gradient(135deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">LEX</span></span>
         </a>
         <div class="header-actions">
           <a href="#support" class="icon-btn-header support-btn-header" aria-label="Support My Work">
@@ -58,9 +72,21 @@
   <!-- Main Content -->
   <main>
     <div class="container">
-      <section class="hero" id="home" data-animation="fade-in">
-        <h1>Fuel My Creative Journey</h1>
-        <p>Your support enables me to create amazing projects and share valuable content with the world. Let's build something extraordinary together!</p>
+      <section class="hero" data-animation="fade-in" style="position: relative;">
+        <!-- Glowing Orb Background -->
+        <div
+          style="position: absolute; width: 300px; height: 300px; background: radial-gradient(circle, var(--primary), var(--accent)); filter: blur(80px); opacity: 0.2; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;">
+        </div>
+
+        <h1><span
+            style="display: block; font-size: 0.4em; color: var(--primary); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px; font-weight: 600;">Welcome
+            to</span>Apielex Technologies</h1>
+        <p style="font-size: 1.15em; line-height: 1.6; color: var(--text-light); margin-bottom: 30px;">
+          Building next-generation mobile applications, AI-driven platforms, and highly scalable digital solutions. At
+          Apielex Technologies, we transform visionary ideas into powerful, real-world tech products. Whether it's
+          enterprise software, engaging consumer apps, or cutting-edge web ecosystems, we engineer excellence from
+          concept to deployment.
+        </p>
         <div class="hero-stats">
           <div class="stat-item">
             <span class="stat-number" id="supporters-count">100+</span>
@@ -76,38 +102,40 @@
           </div>
         </div>
         <button class="cta-btn hero-cta-btn" id="open-support-modal-btn">
-          <i class="fas fa-heart"></i> Support My Work
+          <i class="fas fa-heart"></i> Support Us
         </button>
       </section>
 
       <!-- Support Modal -->
       <div class="modal-overlay" id="support-modal-overlay">
-        <div class="modal cta-modal" id="support-modal" role="dialog" aria-modal="true" aria-labelledby="support-modal-title">
-        <button class="modal-close" id="close-support-modal" aria-label="Close">
-          <i class="fas fa-times"></i>
-        </button>
-        <div class="cta-modal-header">
-          <div class="logo-container">
-            <img src="src/image/profile-picture.jpg" alt="Mr. Santosh" class="logo-img">
-          </div>
-          <div class="cta-modal-header-text">
-            <h2 id="support-modal-title">Support My Work</h2>
-          </div>
-        </div>
-        <p class="modal-description">
-          Clicking 'Proceed' will open the official Razorpay page where you can securely complete your contribution. Thank you for your support!
-        </p>
-        
-        <div class="payment-action-wrapper">
-          <button class="cta-btn" id="payment-btn" type="button">
-            <span class="cta-btn-text">Proceed to Pay</span>
+        <div class="modal cta-modal" id="support-modal" role="dialog" aria-modal="true"
+          aria-labelledby="support-modal-title">
+          <button class="modal-close" id="close-support-modal" aria-label="Close">
+            <i class="fas fa-times"></i>
           </button>
-          <p class="security-note">
-            <i class="fas fa-lock"></i> Secure payment via Razorpay
+          <div class="cta-modal-header">
+            <div class="logo-container">
+              <img src="src/image/apielex-logo.png" alt="Mr. Santosh" class="logo-img">
+            </div>
+            <div class="cta-modal-header-text">
+              <h2 id="support-modal-title">Support My Work</h2>
+            </div>
+          </div>
+          <p class="modal-description">
+            Clicking 'Proceed' will open the official Razorpay page where you can securely complete your contribution.
+            Thank you for your support!
           </p>
+
+          <div class="payment-action-wrapper">
+            <button class="cta-btn" id="payment-btn" type="button">
+              <span class="cta-btn-text">Proceed to Pay</span>
+            </button>
+            <p class="security-note">
+              <i class="fas fa-lock"></i> Secure payment via Razorpay
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
       <section class="value-props scroll-target" id="features">
         <h2 class="section-title">Why Your Support Matters</h2>
@@ -137,7 +165,7 @@
       </section>
 
       <section class="projects-section scroll-target" id="projects" data-animation="fade-in-up">
-        <h2 class="section-title">My Projects</h2>
+        <h2 class="section-title">Our Products</h2>
         <div class="projects-grid">
           <!-- Projects will be loaded here dynamically -->
         </div>
@@ -199,12 +227,12 @@
         </div>
       </section>
 
-<section class="faq-section scroll-target" id="faq" data-animation="fade-in-up">
-  <h2 class="section-title">Frequently Asked Questions</h2>
-  <div class="faq-container">
-    <!-- FAQ items will be loaded here dynamically -->
-  </div>
-</section>
+      <section class="faq-section scroll-target" id="faq" data-animation="fade-in-up">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <!-- FAQ items will be loaded here dynamically -->
+        </div>
+      </section>
     </div>
   </main>
 
@@ -214,9 +242,12 @@
     <div class="drawer-header">
       <a href="#home" class="logo">
         <div class="logo-container">
-          <img src="src/image/profile-picture.jpg" alt="Santosh" class="logo-img">
+          <img src="src/image/apielex-logo.png" alt="Santosh" class="logo-img">
         </div>
-        <span class="logo-text">Mr. Santosh</span>
+        <span class="logo-text"
+          style="font-family: 'Poppins', sans-serif; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; font-size: 1.3em;"><span
+            style="color: var(--text);">APIE</span><span
+            style="background: linear-gradient(135deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">LEX</span></span>
       </a>
       <button class="drawer-close" id="drawer-close" aria-label="Close menu">
         <i class="fas fa-times"></i>
@@ -225,13 +256,15 @@
     <div class="drawer-content">
       <nav class="drawer-nav">
         <a href="#home" class="drawer-link active"><i class="fas fa-home"></i> Home</a>
-        <a href="#projects" class="drawer-link"><i class="fas fa-code-branch"></i> Projects</a>
-        <a href="#support" class="drawer-link"><i class="fas fa-heart"></i> Support Me</a>
+        <a href="#projects" class="drawer-link"><i class="fas fa-box-open"></i> Products</a>
+        <a href="#support" class="drawer-link"><i class="fas fa-heart"></i> Support Us</a>
         <a href="#features" class="drawer-link"><i class="fas fa-star"></i> Features</a>
         <a href="#testimonials" class="drawer-link"><i class="fas fa-comment-dots"></i> Testimonials</a>
         <a href="#faq" class="drawer-link"><i class="fas fa-question-circle"></i> FAQ</a>
-        <button class="drawer-link" id="open-contact-modal-btn" type="button"><i class="fas fa-envelope"></i> Contact Us</button>
-        <a href="https://wa.me/919608547007" class="drawer-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <button class="drawer-link" id="open-contact-modal-btn" type="button"><i class="fas fa-envelope"></i> Contact
+          Us</button>
+        <a href="https://wa.me/919608547007" class="drawer-link" target="_blank" rel="noopener noreferrer"><i
+            class="fab fa-whatsapp"></i> WhatsApp</a>
         <hr class="drawer-divider">
         <button class="drawer-link" id="native-share-btn">
           <i class="fas fa-share-nodes"></i> Share Page
@@ -239,7 +272,7 @@
       </nav>
     </div>
     <div class="drawer-footer">
-      <p class="copyright">© 2024 Santosh. Made with <i class="fas fa-heart heart-icon"></i></p>
+      <p class="copyright">© 2025 Apielex Technologies. All rights reserved.</p>
     </div>
   </aside>
 
@@ -251,18 +284,24 @@
           <div class="footer-brand">
             <a href="#home" class="logo">
               <div class="logo-container">
-                <img src="src/image/profile-picture.jpg" alt="Mr. Santosh logo" class="logo-img">
+                <img src="src/image/apielex-logo.png" alt="Mr. Santosh logo" class="logo-img">
               </div>
-              <span class="logo-text">Mr. Santosh</span>
+              <span class="logo-text"
+                style="font-family: 'Poppins', sans-serif; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; font-size: 1.3em;"><span
+                  style="color: var(--text);">APIE</span><span
+                  style="background: linear-gradient(135deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">LEX</span></span>
             </a>
-            <p>A passionate developer building tools and communities. Your support fuels this journey.</p>
+            <p>A visionary technology company building next-gen mobile apps and scalable digital experiences.</p>
+            <p style="margin-top: 15px; font-weight: 500; font-size: 0.95em;"><a href="mailto:hello.apielex@gmail.com"
+                style="color: var(--text); text-decoration: none;"><i class="fas fa-envelope"
+                  style="color: var(--primary); margin-right: 5px;"></i> hello.apielex@gmail.com</a></p>
           </div>
           <div class="footer-nav-links">
             <h4>Quick Links</h4>
             <div class="links-row">
               <a href="#home">Home</a>
               <a href="#support">Support</a>
-              <a href="#projects">Projects</a>
+              <a href="#projects">Products</a>
               <a href="#faq">FAQ</a>
             </div>
           </div>
@@ -270,17 +309,22 @@
             <h4>Connect With Me</h4>
             <div class="social-links">
               <a href="#" id="open-contact-modal-footer-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
-              <a href="https://wa.me/919608547007" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-              <a href="https://github.com/iamskdev" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/heysantosh" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              <a href="https://twitter.com/heysantosh" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-              <a href="https://instagram.com/heysantosh" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://wa.me/919608547007" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
+                  class="fab fa-whatsapp"></i></a>
+              <a href="https://github.com/apielex" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+                  class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/heysantosh" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://twitter.com/heysantosh" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i
+                  class="fab fa-twitter"></i></a>
+              <a href="https://instagram.com/heysantosh" target="_blank" rel="noopener noreferrer"
+                aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
         </div>
         <hr class="footer-divider">
         <div class="footer-bottom">
-          <p class="copyright">© 2024 Santosh. Made with <i class="fas fa-heart heart-icon"></i> in India.</p>
+          <p class="copyright">© 2025 Apielex Technologies. All rights reserved.</p>
         </div>
       </div>
     </div>
@@ -293,7 +337,9 @@
         <i class="fas fa-times"></i>
       </button>
       <h2>Get in Touch</h2>
-      <p>Have a question or want to collaborate? Send me a message!</p>
+      <p>Have a question or want to collaborate? Send me a message or email us directly at <a
+          href="mailto:hello.apielex@gmail.com"
+          style="color: var(--primary); font-weight: 600;">hello.apielex@gmail.com</a></p>
       <form class="contact-form" id="contact-form" data-netlify="true" name="contact" method="POST">
         <input type="hidden" name="form-name" value="contact" />
         <div class="form-group">
@@ -342,4 +388,5 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="src/scripts/script.js"></script>
 </body>
+
 </html>

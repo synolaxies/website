@@ -1,35 +1,57 @@
 [
   {
-    "image": "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?w=400&h=250&fit=crop&q=80",
-    "alt": "ApnaStore E-commerce Project",
-    "title": "Apna Store",
-    "description": "A mobile-first Progressive Web App (PWA) designed to bring local shops and service providers online, built with a modular architecture.",
-    "tags": ["PWA", "Firebase", "Vanilla JS"],
-    "links": {
-      "demo": { "url": "#", "disabled": true },
-      "source": { "url": "https://github.com/iamskdev/apnastore.com" }
-    }
-  },
-  {
     "image": "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=400&h=250&fit=crop&q=80",
-    "alt": "Community Hub Project",
-    "title": "Community Hub",
-    "description": "The very page you are on! A modern, responsive landing page to receive support for creative work.",
-    "tags": ["PWA", "Particles.js", "Swiper.js"],
+    "alt": "Apielex Technologies Website",
+    "title": "Apielex Official Website",
+    "description": "The very page you are on! The official digital headquarters of Apielex Technologies, featuring a modern, highly responsive UI.",
+    "tags": ["Corporate", "Landing Page", "PWA"],
     "links": {
       "demo": { "url": "#", "disabled": false },
-      "source": { "url": "https://github.com/iamskdev/community.hub" }
+      "source": { "url": "https://github.com/apielex/website" }
     }
   },
   {
     "image": "https://images.unsplash.com/photo-1543269865-cbf427effbad?w=400&h=250&fit=crop&q=80",
     "alt": "Ancesstory Project",
     "title": "Ancesstory",
-    "description": "An upcoming project to explore, document, and visualize your family history and lineage.",
-    "tags": ["SPA", "Family Tree", "Upcoming"],
+    "description": "An upcoming native mobile application to explore, document, and visualize your family history and lineage.",
+    "tags": ["Native App", "Family Tree", "Upcoming"],
     "links": {
       "demo": { "url": "#", "disabled": true },
       "source": { "url": "https://github.com/iamskdev/ancesstory.com" }
+    }
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?w=400&h=250&fit=crop&q=80",
+    "alt": "mStore E-commerce Project",
+    "title": "mStore",
+    "description": "A mobile-first Progressive Web App (PWA) designed to bring local shops online. Planned native upgrades for admin panels.",
+    "tags": ["PWA", "E-commerce", "Firebase"],
+    "links": {
+      "demo": { "url": "#", "disabled": true },
+      "source": { "url": "https://github.com/iamskdev/apnastore.com" }
+    }
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=250&fit=crop&q=80",
+    "alt": "MediCraft HealthTech App",
+    "title": "MediCraft",
+    "description": "An upcoming native secure health locker to effortlessly manage medical histories, prescriptions, and lab reports.",
+    "tags": ["Native App", "HealthTech", "Upcoming"],
+    "links": {
+      "demo": { "url": "#", "disabled": true },
+      "source": { "url": "#" }
+    }
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=250&fit=crop&q=80",
+    "alt": "LearnIt EdTech Platform",
+    "title": "LearnIt",
+    "description": "An upcoming native platform empowering independent educators to host, manage, and deliver their online courses seamlessly.",
+    "tags": ["Native App", "EdTech", "Upcoming"],
+    "links": {
+      "demo": { "url": "#", "disabled": true },
+      "source": { "url": "#" }
     }
   }
 ]
