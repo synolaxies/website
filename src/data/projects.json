@@ -1,13 +1,22 @@
 [
   {
     "image": "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=400&h=250&fit=crop&q=80",
-    "alt": "Synolaxies Technologies Website",
+    "alt": "Synolaxies Studio Website",
     "title": "Synolaxies Official Website",
-    "description": "The very page you are on! The official digital headquarters of Synolaxies Technologies, featuring a modern, highly responsive UI.",
-    "tags": ["Corporate", "Landing Page", "PWA"],
+    "description": "The very page you are on! The official digital headquarters of Synolaxies Studio, featuring a modern, highly responsive UI.",
+    "tags": [
+      "Corporate",
+      "Landing Page",
+      "PWA"
+    ],
     "links": {
-      "demo": { "url": "#", "disabled": false },
-      "source": { "url": "https://github.com/Synolaxies/website" }
+      "demo": {
+        "url": "#",
+        "disabled": false
+      },
+      "source": {
+        "url": "https://github.com/Synolaxies/website"
+      }
     }
   },
   {
@@ -15,10 +24,19 @@
     "alt": "Ancesstory Project",
     "title": "Ancesstory",
     "description": "An upcoming native mobile application to explore, document, and visualize your family history and lineage.",
-    "tags": ["Native App", "Family Tree", "Upcoming"],
+    "tags": [
+      "Native App",
+      "Family Tree",
+      "Upcoming"
+    ],
     "links": {
-      "demo": { "url": "#", "disabled": true },
-      "source": { "url": "https://github.com/iamskdev/ancesstory.com" }
+      "demo": {
+        "url": "#",
+        "disabled": true
+      },
+      "source": {
+        "url": "https://github.com/iamskdev/ancesstory.com"
+      }
     }
   },
   {
@@ -26,10 +44,19 @@
     "alt": "mStore E-commerce Project",
     "title": "mStore",
     "description": "A mobile-first Progressive Web App (PWA) designed to bring local shops online. Planned native upgrades for admin panels.",
-    "tags": ["PWA", "E-commerce", "Firebase"],
+    "tags": [
+      "PWA",
+      "E-commerce",
+      "Firebase"
+    ],
     "links": {
-      "demo": { "url": "#", "disabled": true },
-      "source": { "url": "https://github.com/iamskdev/apnastore.com" }
+      "demo": {
+        "url": "#",
+        "disabled": true
+      },
+      "source": {
+        "url": "https://github.com/iamskdev/apnastore.com"
+      }
     }
   },
   {
@@ -37,10 +64,19 @@
     "alt": "MediCraft HealthTech App",
     "title": "MediCraft",
     "description": "An upcoming native secure health locker to effortlessly manage medical histories, prescriptions, and lab reports.",
-    "tags": ["Native App", "HealthTech", "Upcoming"],
+    "tags": [
+      "Native App",
+      "HealthTech",
+      "Upcoming"
+    ],
     "links": {
-      "demo": { "url": "#", "disabled": true },
-      "source": { "url": "#" }
+      "demo": {
+        "url": "#",
+        "disabled": true
+      },
+      "source": {
+        "url": "#"
+      }
     }
   },
   {
@@ -48,10 +84,19 @@
     "alt": "LearnIt EdTech Platform",
     "title": "LearnIt",
     "description": "An upcoming native platform empowering independent educators to host, manage, and deliver their online courses seamlessly.",
-    "tags": ["Native App", "EdTech", "Upcoming"],
+    "tags": [
+      "Native App",
+      "EdTech",
+      "Upcoming"
+    ],
     "links": {
-      "demo": { "url": "#", "disabled": true },
-      "source": { "url": "#" }
+      "demo": {
+        "url": "#",
+        "disabled": true
+      },
+      "source": {
+        "url": "#"
+      }
     }
   }
 ]
