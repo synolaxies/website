@@ -286,7 +286,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Prevent any default browser action, which is good practice for buttons.
     if(event) event.preventDefault();
 
-    const razorpayUrl = 'https://razorpay.me/@paytosantosh';
+    const razorpayUrl = 'https://razorpay.me/@synolaxies';
 
     // Try to open the payment link in a new tab. 'noopener' and 'noreferrer' are for security.
     const newWindow = window.open(razorpayUrl, '_blank', 'noopener,noreferrer');

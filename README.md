@@ -95,7 +95,7 @@ Distributed under the MIT License. See `LICENSE` file for more information.
 
 ## 📬 Contact
 
-Synolaxies Studio - @synolaxies - hello.synolaxies@gmail.com
+Synolaxies Studio - @synolaxies - synolaxies@gmail.com
 
 Project Link: https://github.com/synolaxies/website
 
