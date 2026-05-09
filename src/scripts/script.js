@@ -527,7 +527,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const shareData = {
       title: document.title,
       text: "Check out this awesome page!",
-      url: window.location.href,
+      url: window.location.href.replace(/\/$/, ""),
     };
     try {
       // Use Web Share API if available
