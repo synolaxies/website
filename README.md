@@ -1,10 +1,10 @@
-# Santosh's Community Hub
+# Synolaxies Studio Official Website
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A modern, responsive, and feature-rich landing page designed to help creators receive financial support for their work. Built with vanilla HTML, CSS, and JavaScript, it's lightweight, easy to customize, and integrated with Razorpay for seamless payments.
 
-**➡️ [View Live Demo](https://iamskdev.github.io/community.hub/)**
+**➡️ [View Live Demo](https://synolaxies.github.io/website/)**
 
 ![Community Hub Screenshot](src/image/screenshot.png)
 *(Note: You should add a screenshot of your project and name it `screenshot.png` inside the `src/image/` folder)*
@@ -55,11 +55,11 @@ You just need a modern web browser.
 
 1.  Clone the repository:
     ```sh
-    git clone https://github.com/iamskdev/community.hub.git
+    git clone https://github.com/synolaxies/website.git
     ```
 2.  Navigate to the project directory:
     ```sh
-    cd community.hub
+    cd website
     ```
 3.  Open the `index.html` file in your browser. That's it!
 
@@ -95,9 +95,9 @@ Distributed under the MIT License. See `LICENSE` file for more information.
 
 ## 📬 Contact
 
-Santosh - @heysantosh - iamsantiosh@outlook.in
+Synolaxies Studio - @synolaxies - hello.synolaxies@gmail.com
 
-Project Link: https://github.com/iamskdev/community.hub
+Project Link: https://github.com/synolaxies/website
 
 git add .
 git commit -m "donation-amount updated"
