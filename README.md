@@ -6,8 +6,25 @@ A modern, responsive, and feature-rich landing page designed to help creators re
 
 **➡️ [View Live Demo](https://synolaxies.github.io/website/)**
 
-![Community Hub Screenshot](src/image/screenshot.png)
-*(Note: You should add a screenshot of your project and name it `screenshot.png` inside the `src/image/` folder)*
+---
+
+## 🏢 About Synolaxies Studio
+
+**Synolaxies Studio** is a forward-thinking digital product studio dedicated to building next-generation software solutions. We specialize in creating high-performance web applications, native mobile experiences, and scalable digital ecosystems that help businesses and individuals thrive in the modern age.
+
+### 🌟 Our Vision
+Our mission is to bridge the gap between imagination and reality through clean code, premium design, and user-centric innovation. We don't just build software; we craft digital experiences that leave a lasting impact.
+
+### 🛠️ What We Do
+- **Next-Gen Web Apps:** Highly responsive, PWA-ready landing pages and platforms.
+- **Native Mobile Development:** Building deep, feature-rich apps like **Roots** (Family History & Lineage).
+- **E-commerce Ecosystems:** Empowering local businesses with tools like **mStore**.
+- **Specialized Platforms:** Crafting solutions for Education (**EduCraft**) and Healthcare (**MediCraft**).
+
+### 💎 Our Philosophy
+- **Minimalist Excellence:** Clean, intuitive, and premium UI/UX.
+- **Scalable Tech:** Built with modern, future-proof technologies.
+- **Open Innovation:** Contributing to the community and building in public.
 
 ---
 
@@ -98,7 +115,3 @@ Distributed under the MIT License. See `LICENSE` file for more information.
 Synolaxies Studio - @synolaxies - synolaxies@gmail.com
 
 Project Link: https://github.com/synolaxies/website
-
-git add .
-git commit -m "donation-amount updated"
-git push origin main

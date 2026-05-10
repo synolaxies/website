@@ -7,7 +7,7 @@
     "tags": [
       "Corporate",
       "Landing Page",
-      "PWA"
+      "Mainsite"
     ],
     "links": {
       "demo": {
@@ -27,7 +27,7 @@
     "tags": [
       "Native App",
       "Family Tree",
-      "Upcoming"
+      "In Progress"
     ],
     "links": {
       "demo": {
@@ -35,7 +35,7 @@
         "disabled": true
       },
       "source": {
-        "url": "https://github.com/iamskdev/ancesstory.com"
+        "url": "https://github.com/synolaxies/roots"
       }
     }
   },
@@ -47,15 +47,15 @@
     "tags": [
       "PWA",
       "E-commerce",
-      "Firebase"
+      "In Progress"
     ],
     "links": {
       "demo": {
-        "url": "#",
-        "disabled": true
+        "url": "https://synolaxies.github.io/mstore.com",
+        "disabled": false
       },
       "source": {
-        "url": "https://github.com/iamskdev/apnastore.com"
+        "url": "https://github.com/synolaxies/mstore.com"
       }
     }
   },
@@ -82,7 +82,7 @@
   {
     "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=250&fit=crop&q=80",
     "alt": "LearnIt EdTech Platform",
-    "title": "LearnIt",
+    "title": "EduCraft",
     "description": "An upcoming native platform empowering independent educators to host, manage, and deliver their online courses seamlessly.",
     "tags": [
       "Native App",
@@ -100,9 +100,9 @@
     }
   },
   {
-    "image": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=400&h=250&fit=crop&q=80",
+    "image": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=400&h=250&fit=crop&q=80",
     "alt": "Eventify Planning App",
-    "title": "Eventify",
+    "title": "Event Planner",
     "description": "An upcoming all-in-one event management platform to handle guest lists, shopping tasks, budget tracking, and full event logistics.",
     "tags": [
       "Native App",
@@ -119,4 +119,4 @@
       }
     }
   }
-]
+]
