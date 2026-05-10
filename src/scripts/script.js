@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
   document.body.classList.remove('no-scroll');
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   // ========== Moon Phase & Shooting Stars ==========
   const moonContainer = document.getElementById('moon-container');
 
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const phase = getMoonPhase(today);
     const moon = document.createElement('div');
     moon.className = 'moon';
- 
+
     // First, add the moon to the DOM to be able to read its CSS-defined styles.
     moonContainer.innerHTML = '';
     moonContainer.appendChild(moon);
@@ -281,19 +281,19 @@ document.addEventListener('DOMContentLoaded', function() {
     applyTheme('light'); // Default to light and set icon
   }
 
-  themeToggleBtn.addEventListener('click', function() {
+  themeToggleBtn.addEventListener('click', function () {
     const newTheme = document.body.classList.contains('dark-mode') ? 'light' : 'dark';
     localStorage.setItem('theme', newTheme);
     applyTheme(newTheme);
   });
 
-  
+
 
   // ========== Payment System (Razorpay SDK) ==========
   const paymentBtn = document.getElementById('payment-btn');
 
   const handlePayment = (event) => {
-    if(event) event.preventDefault();
+    if (event) event.preventDefault();
 
     // NOTE: Replace 'YOUR_RAZORPAY_KEY_ID' with your actual Key ID from Razorpay Dashboard
     const options = {
@@ -302,7 +302,7 @@ document.addEventListener('DOMContentLoaded', function() {
       "currency": "INR",
       "name": "Synolaxies Studio",
       "description": "Support Synolaxies Studio",
-      "image": "https://synolaxies.github.io/website/src/image/synolaxies-logo.png",
+      "image": "https://synolaxies.github.io/website/src/image/synolaxies-logo.jpg",
       "handler": function (response) {
         // This function executes after a successful payment
         closeSupportModal();
@@ -484,7 +484,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (!startTimestamp) startTimestamp = timestamp;
       const progress = Math.min((timestamp - startTimestamp) / duration, 1);
       const currentValue = Math.floor(progress * (end - start) + start);
-      
+
       element.textContent = currentValue + suffix;
 
       if (progress < 1) {
@@ -502,7 +502,7 @@ document.addEventListener('DOMContentLoaded', function() {
           const text = el.textContent.trim();
           const target = parseFloat(text); // Gets 250 from "250+", 5 from "5K+"
           const suffix = text.replace(/[0-9.]/g, ''); // Gets "+" from "250+", "K+" from "5K+"
-          
+
           animateValue(el, 0, target, 2000, suffix);
         });
         observer.unobserve(entry.target); // Animate only once
@@ -629,7 +629,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const sections = document.querySelectorAll('.hero, .scroll-target');
   const drawerLinks = document.querySelectorAll('.drawer-nav a.drawer-link[href^="#"]');
   const particlesJsEl = document.getElementById('particles-js'); // For parallax
- 
+
   let lastKnownScrollY = 0;
   let ticking = false;
   // Cooldown for shooting stars on scroll
@@ -671,7 +671,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   };
- 
+
   window.addEventListener('scroll', () => {
     lastKnownScrollY = window.scrollY;
     if (!ticking) {

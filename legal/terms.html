@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="../src/styles/style.css">
     <script>
-        (function() {
+        (function () {
             const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
             const savedTheme = localStorage.getItem('theme');
             if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
@@ -25,20 +26,23 @@
             --bg: #fdfdff;
             --header-bg: rgba(255, 255, 255, 0.9);
         }
+
         .dark-mode {
             --bg: #0a0a12;
             --text: #ffffff;
             --text-light: #a0a0a0;
             --header-bg: rgba(10, 10, 18, 0.9);
         }
-        body { 
-            padding-top: 80px; 
-            line-height: 1.8; 
-            color: var(--text); 
-            background-color: var(--bg); 
-            font-family: 'Poppins', sans-serif; 
+
+        body {
+            padding-top: 80px;
+            line-height: 1.8;
+            color: var(--text);
+            background-color: var(--bg);
+            font-family: 'Poppins', sans-serif;
             transition: background 0.3s, color 0.3s;
         }
+
         header {
             position: fixed;
             top: 0;
@@ -50,6 +54,7 @@
             z-index: 1000;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
+
         .header-container {
             max-width: 850px;
             margin: 0 auto;
@@ -57,17 +62,20 @@
             display: flex;
             align-items: center;
         }
+
         .logo {
             display: flex;
             align-items: center;
             gap: 10px;
             text-decoration: none;
         }
+
         .logo img {
             width: 30px;
             height: 30px;
             border-radius: 50%;
         }
+
         .logo span {
             font-family: 'Orbitron', sans-serif;
             font-weight: 900;
@@ -75,55 +83,125 @@
             font-size: 1.1em;
             letter-spacing: 1px;
         }
-        .policy-container { 
-            max-width: 850px; 
-            margin: 0 auto; 
-            padding: 20px; 
+
+        .policy-container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
         }
-        h1 { color: var(--text); font-family: 'Orbitron', sans-serif; font-size: 2.5em; margin-top: 10px; margin-bottom: 40px; letter-spacing: 1px; border-bottom: 2px solid var(--primary); padding-bottom: 15px; }
-        .dark-mode h1 { color: #ffffff; border-bottom-color: var(--accent); }
-        h2 { color: var(--primary); font-family: 'Orbitron', sans-serif; font-size: 1.5em; margin-top: 45px; margin-bottom: 20px; }
-        .dark-mode h2 { color: var(--accent); }
-        .back-link { display: flex; align-items: center; margin-bottom: 30px; color: var(--primary); text-decoration: none; font-weight: 600; font-size: 1em; transition: 0.3s; }
-        .back-link:hover { transform: translateX(-8px); }
-        .last-updated { display: block; color: var(--primary); font-size: 0.95em; margin-bottom: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
-        .dark-mode .last-updated { color: var(--accent); }
-        p { margin-bottom: 20px; font-size: 1.05em; color: var(--text-light); }
-        .dark-mode p { color: #d0d0d0; }
-        strong { color: var(--primary); }
-        .dark-mode strong { color: var(--accent); }
+
+        h1 {
+            color: var(--text);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5em;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 15px;
+        }
+
+        .dark-mode h1 {
+            color: #ffffff;
+            border-bottom-color: var(--accent);
+        }
+
+        h2 {
+            color: var(--primary);
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5em;
+            margin-top: 45px;
+            margin-bottom: 20px;
+        }
+
+        .dark-mode h2 {
+            color: var(--accent);
+        }
+
+        .back-link {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            transform: translateX(-8px);
+        }
+
+        .last-updated {
+            display: block;
+            color: var(--primary);
+            font-size: 0.95em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .dark-mode .last-updated {
+            color: var(--accent);
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05em;
+            color: var(--text-light);
+        }
+
+        .dark-mode p {
+            color: #d0d0d0;
+        }
+
+        strong {
+            color: var(--primary);
+        }
+
+        .dark-mode strong {
+            color: var(--accent);
+        }
     </style>
 </head>
+
 <body>
     <header>
         <div class="header-container">
             <a href="../" class="logo">
-                <img src="../src/image/synolaxies-logo.png" alt="Logo">
+                <img src="../src/image/synolaxies-logo.jpg" alt="Logo">
                 <span>Synolaxies</span>
             </a>
         </div>
     </header>
     <div class="container">
         <div class="policy-container">
-            <a href="../" class="back-link"><i class="fas fa-arrow-left" style="margin-right: 12px;"></i> Back to Home</a>
+            <a href="../" class="back-link"><i class="fas fa-arrow-left" style="margin-right: 12px;"></i> Back to
+                Home</a>
             <span class="last-updated">Last updated: May 09, 2026</span>
             <h1>Terms & Conditions</h1>
-            
+
             <h2>1. Agreement to Terms</h2>
             <p>By accessing our website and using our services, you agree to be bound by these Terms and Conditions.</p>
-            
+
             <h2>2. Intellectual Property</h2>
-            <p>All content and software provided by Synolaxies Studio are the property of Synolaxies Studio and are protected by international copyright laws.</p>
-            
+            <p>All content and software provided by Synolaxies Studio are the property of Synolaxies Studio and are
+                protected by international copyright laws.</p>
+
             <h2>3. User Responsibilities</h2>
-            <p>Users are responsible for maintaining the confidentiality of their information and for all activities that occur under their use of our services.</p>
-            
+            <p>Users are responsible for maintaining the confidentiality of their information and for all activities
+                that occur under their use of our services.</p>
+
             <h2>4. Limitation of Liability</h2>
-            <p>Synolaxies Studio shall not be liable for any indirect, incidental, or consequential damages arising out of the use of our products or services.</p>
-            
+            <p>Synolaxies Studio shall not be liable for any indirect, incidental, or consequential damages arising out
+                of the use of our products or services.</p>
+
             <h2>5. Governing Law</h2>
             <p>These terms shall be governed by and construed in accordance with the laws of India.</p>
         </div>
     </div>
 </body>
+
 </html>
