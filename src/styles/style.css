@@ -1166,18 +1166,29 @@ header .logo-container {
 
     .project-tags {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap; /* Prevent wrapping to second line */
       gap: 0.5rem;
       margin-bottom: 1rem;
+      overflow-x: auto; /* Enable horizontal scrolling */
+      scrollbar-width: none; /* Hide scrollbar for Firefox */
+      -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+      padding-bottom: 5px;
+    }
+
+    .project-tags::-webkit-scrollbar {
+      display: none; /* Hide scrollbar for Chrome/Safari */
     }
 
     .project-tags span {
       background-color: var(--primary-light);
       color: var(--primary-dark);
       padding: 0.25rem 0.75rem;
-      border-radius: 12px;
-      font-size: 0.75rem;
-      font-weight: 500;
+      border-radius: 16px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 800; /* Extra Bold */
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .project-links {
